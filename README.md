@@ -26,6 +26,7 @@ This project demonstrates the use of the YOLOv8 model for object detection tasks
    cd yolo-object-detection
    
 Install the required packages:
+   ```bash
 pip install ultralytics opencv-python matplotlib numpy
 
 
