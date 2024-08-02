@@ -77,7 +77,7 @@ model: Path to the trained model file.
 image.jpg: Path to the image you want to make predictions on.
 save_dir: Directory where you want to save the annotated images.
 
-4. Real-Time Detection Using a Webcam
+## Real-Time Detection Using a Webcam
 You can run real-time detection using a webcam by executing the following script:
 
 ```bash
@@ -134,10 +134,10 @@ cv2.VideoCapture(0): Initializes the webcam (0 for the default camera).
 'q' key: Press to stop the real-time detection.
 ```
 
-5. Checking Results
+## Checking Results
 Predictions: After running predictions, check the specified save directory for annotated images.
 Training Logs: Review training logs and results to fine-tune model parameters if necessary.
 Real-Time Detection: Observe real-time object detection and adjust model settings for optimal performance.
 
-7. Customizing the Project
+## Customizing the Project
 Feel free to customize the project according to your needs. You can adjust the model architecture, dataset, or detection parameters as required.
