@@ -24,10 +24,12 @@ This project demonstrates the use of the YOLOv8 model for object detection tasks
    ```bash
    git clone https://github.com/yourusername/yolo-object-detection.git
    cd yolo-object-detection
+   
 Install the required packages:
 
 
 pip install ultralytics opencv-python matplotlib numpy
+
 Download the pre-trained YOLOv8 weights or train a custom model.
 
 Usage
@@ -43,10 +45,9 @@ model = YOLO("yolov8n.yaml").load("yolov8n.pt")  # build from YAML and transfer 
 
 # Train the model
 results = model.train(data="coco8.yaml", epochs=100, imgsz=640)
+
 2. Image Prediction
 Make predictions on images using a trained YOLO model.
-
-
 from ultralytics import YOLO
 
 # Load the model
@@ -62,6 +63,7 @@ for result in results:
     result.save(save_dir='C:/YOLO/runs/detect/predictions')  # save the image with predictions
 
 print("Prediction complete. Check the predictions directory for results.")
+
 3. Real-Time Prediction
 Perform real-time object detection using a webcam.
 
